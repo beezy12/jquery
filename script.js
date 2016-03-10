@@ -1,71 +1,71 @@
-// $(document).ready(function() {
+$(document).ready(function() {
 
-//   // Select by id. jQuery *always* returns an array of
-//   // elements, even when there's only one
-//   // 
-//   // var topArticle = document.getElementById("top-article");
-//   var article = $("#top-article");
+  // Select by id. jQuery *always* returns an array of
+  // elements, even when there's only one
+  //
+  // var topArticle = document.getElementById("top-article");
+  var article = $("#top-article");
 
-//   // Select by tag name.
-//   // 
-//   // var topArticle = document.getElementByTagName("button");
-//   var button = $("button");
-//   console.log("button", button.html());
+  // Select by tag name.
+  //
+  // var topArticle = document.getElementByTagName("button");
+  var button = $("button");
+  console.log("button", button.html());
 
-//   // Select by class
-//   // 
-//   // var mainArticles = document.getElementsByClassName("article--main");
-//   $(".article--main").each(function(arrayIndex, currentElement) {
-//     console.log($(currentElement).html());
-//   });
+  // Select by class
+  //
+  // var mainArticles = document.getElementsByClassName("article--main");
+  $(".article--main").each(function(arrayIndex, currentElement) {
+    console.log($(currentElement).html());
+  });
 
-//   // Select by attribute
-//   var umbreallaElement = $("h1[umbrella='open']");
-//   console.log("umbrella text: ", umbreallaElement.html());
-  
-//   // Select children
-//   console.log("all children: ", $(".container").children()); // There are two children
+  // Select by attribute
+  var umbreallaElement = $("h1[umbrella='open']");
+  console.log("umbrella text: ", umbreallaElement.html());
 
-//   // Select specific children
-//   console.log("the h1: ", $(".container").children("h1"));
-//   console.log("the section: ", $(".container").children("section"));
+  // Select children
+  console.log("all children: ", $(".container").children()); // There are two children
 
-//   // Select specific child index (useful for ul/ol)
-//   // Example of chaining selectors
-//   console.log("third li: ", $("#letters").children(".letter").eq(2).html());
+  // Select specific children
+  console.log("the h1: ", $(".container").children("h1"));
+  console.log("the section: ", $(".container").children("section"));
 
-//   // Finding an element
-//   var album = $(".container").find(".album");
-//   console.log("album", album.html());
+  // Select specific child index (useful for ul/ol)
+  // Example of chaining selectors
+  console.log("third li: ", $("#letters").children(".letter").eq(2).html());
 
-//   // Selecting siblings
-//   var aSibling = $(".a").next();
-//   console.log("aSibling: ", aSibling.html());
+  // Finding an element
+  var album = $(".container").find(".album");
+  console.log("album", album.html());
 
-//   // Selecting all siblings
-//   var aSiblings = $(".a").nextAll();
-//   aSiblings.each(function(index, el) {
-//     console.log("sibling text: ", $(el).html());
-//   });
+  // Selecting siblings
+  var aSibling = $(".a").next();
+  console.log("aSibling: ", aSibling.html());
 
-//   // Working with form fields and the val() method
-//   console.log("field value: ", $("#firstName").val());
+  // Selecting all siblings
+  var aSiblings = $(".a").nextAll();
+  aSiblings.each(function(index, el) {
+    console.log("sibling text: ", $(el).html());
+  });
 
-//   // Handling events
-//   $("#destroyer").click(function() {
-//     $(".container").hide();
-//     // $(".container").show();
-//     // $(".container").toggle();
-//   });
+  // Working with form fields and the val() method
+  console.log("field value: ", $("#firstName").val());
 
-//   $("#firstName").keyup(function() {
-//     $(".echo").html($(this).val());
-//   });
+  // Handling events
+  $("#destroyer").click(function() {
+    $(".container").hide();
+    // $(".container").show();
+    // $(".container").toggle();
+  });
 
-//   var listsongs = $("#list-of-songs");
-//   console.log("songs", listsongs.html());
+  $("#firstName").keyup(function() {
+    $(".echo").html($(this).val());
+  });
 
-// });
+  var listsongs = $("#list-of-songs");
+  console.log("songs", listsongs.html());
+
+});
 
 
 
